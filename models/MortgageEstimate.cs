@@ -6,7 +6,6 @@ namespace MovingCostEstimate.models
         public decimal Deposit { get; set; }
 
         public double AnnualInterestRate { get; set; }
-
         public int TermYears { get; set; }
         
     }

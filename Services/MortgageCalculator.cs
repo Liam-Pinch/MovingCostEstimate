@@ -9,7 +9,7 @@ namespace MovingCostEstimate.Services
         public static MortgageResponse Calculate(MortgageRequest request)
         {
             decimal principle = request.HousePrice - request.Deposit;
-            double monthlyRate = (request.AnnualInterestRate / 100) / 12;
+            double monthlyRate = request.AnnualInterestRate / 100 / 12;
             int months = request.TermYears * 12;
 
             decimal monthlyRepayment = (decimal)(
