@@ -12,11 +12,12 @@ namespace MovingCostEstimate.Controllers
         [HttpPost("calculate")]
         public ActionResult<MortgageResponse> CalculateMortgage([FromBody] MortgageRequest request)
         {
+            // validate an ensure no negative numbers.
             if (request.TermYears <= 0 || request.HousePrice <= 0 ||
             request.AnnualInterestRate < 0 || request.Deposit <= 0)
                 return BadRequest("Invalid Input");
 
-            var result = MortgageCalculator.Calculate(request);
+            var result = MortgageCalculator.Calculate(request); //return result
             return Ok(result);
         }
     }

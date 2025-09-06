@@ -4,8 +4,8 @@ using MovingCostEstimate.Models;
 
 namespace MovingCostEstimate.Services
 {
-    public static class MortgageCalculator
-    {
+    public static class MortgageCalculator 
+    { // Calculation is based on the formula M = P x r(1+r)^n / (1 + r)^n - 1.
         public static MortgageResponse Calculate(MortgageRequest request)
         {
             decimal principle = request.HousePrice - request.Deposit;

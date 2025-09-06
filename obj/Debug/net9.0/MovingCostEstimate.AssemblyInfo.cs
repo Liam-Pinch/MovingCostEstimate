@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MovingCostEstimate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70c55a20c8e8fed0d68ead6e1ddc718fe82a77a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MovingCostEstimate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MovingCostEstimate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

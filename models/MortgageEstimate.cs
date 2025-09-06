@@ -1,6 +1,6 @@
 namespace MovingCostEstimate.models
 {
-    public class MortgageRequest
+    public class MortgageRequest //model for House Purchasing Costs.
     {
         public decimal HousePrice { get; set; }
         public decimal Deposit { get; set; }
