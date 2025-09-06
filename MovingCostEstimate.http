@@ -1,0 +1,6 @@
+@MovingCostEstimate_HostAddress = http://localhost:5008
+
+GET {{MovingCostEstimate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
