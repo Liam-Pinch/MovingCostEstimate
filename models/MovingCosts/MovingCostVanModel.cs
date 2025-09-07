@@ -1,4 +1,4 @@
-namespace MovingCostEstimate.models {
+namespace MovingCostEstimate.models.MovingCosts {
     public class MovingCostVan
     {
         public decimal VanHire { get; set; }

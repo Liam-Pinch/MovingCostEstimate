@@ -1,4 +1,4 @@
-namespace MovingCostEstimate.Models
+namespace MovingCostEstimate.models.Mortgage
 {
     public class MortgageResponse // model for response after calculation.
     {

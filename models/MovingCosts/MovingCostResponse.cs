@@ -1,4 +1,4 @@
-namespace MovingCostEstimate
+namespace MovingCostEstimate.models.MovingCosts
 {
     public class MovingCostResponse
     {

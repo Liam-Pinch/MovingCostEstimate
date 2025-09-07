@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
-using MovingCostEstimate.models;
-using MovingCostEstimate.Models;
+using MovingCostEstimate.models.Mortgage;
 
-namespace MovingCostEstimate.Services
+namespace MovingCostEstimate.Services.Mortgage
 {
     public static class MortgageCalculator 
     { // Calculation is based on the formula M = P x r(1+r)^n / (1 + r)^n - 1.

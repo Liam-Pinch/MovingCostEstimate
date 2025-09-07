@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using MovingCostEstimate.models;
-using MovingCostEstimate.Models;
-using MovingCostEstimate.Services;
+using MovingCostEstimate.models.Mortgage;
+using MovingCostEstimate.Services.Mortgage;
 
 namespace MovingCostEstimate.Controllers
 {

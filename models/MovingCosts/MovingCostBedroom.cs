@@ -1,6 +1,6 @@
-namespace MovingCostEstimate.models
+namespace MovingCostEstimate.models.MovingCosts
 {
-    public class MovingCostBedroom
+    public class MovingCostBedroom 
     {
         public decimal Bed { get; set; }
         public decimal Mattress { get; set; }
