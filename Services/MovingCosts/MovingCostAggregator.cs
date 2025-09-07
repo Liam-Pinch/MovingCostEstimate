@@ -35,16 +35,16 @@ namespace MovingCostEstimate.Services.MovingCosts
         {
             var response = new MovingCostResponse
             {
-                Van = _vanCalculator.CalculateVan(van),
-                Kitchen = _kitchenCalculator.CalculateKitchen(kitchen),
-                Livingroom = _livingroomCalculator.CalculateLivingRoom(livingroom),
-                Bedroom = _bedroomCalculator.CalculateBedroom(bedroom),
-                Essentials = _essentialsCalculator.CalculateEssentials(essentials),
-                Decorating = _decoratingCalculator.CalculateDecorating(decorating)
+                VanTotal = _vanCalculator.CalculateVan(van),
+                KitchenTotal = _kitchenCalculator.CalculateKitchen(kitchen),
+                LivingroomTotal = _livingroomCalculator.CalculateLivingRoom(livingroom),
+                BedroomTotal = _bedroomCalculator.CalculateBedroom(bedroom),
+                EssentialsTotal = _essentialsCalculator.CalculateEssentials(essentials),
+                DecoratingTotal = _decoratingCalculator.CalculateDecorating(decorating)
             };
 
-            response.Total = response.Van + response.Kitchen + response.Livingroom + response.Bedroom +
-            response.Essentials + response.Decorating;
+            response.TotalCost = response.VanTotal + response.KitchenTotal + response.LivingroomTotal + response.BedroomTotal +
+            response.EssentialsTotal + response.DecoratingTotal;
 
             return response;
         }

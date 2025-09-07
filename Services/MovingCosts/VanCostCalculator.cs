@@ -6,7 +6,7 @@ namespace MovingCostEstimate.Services.MovingCosts
     {
         public decimal CalculateVan(MovingCostVan Van)
         {
-            return (Van.VanFuel * Van.VanHireDays) + (Van.ProfessionalMovers * Van.VanHireDays) + Van.VanFuel;
+            return (Van.VanHire * Van.VanHireDays) + Van.VanFuel + (Van.ProfessionalMovers * Van.VanHireDays);
             
         }
     }

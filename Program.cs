@@ -10,7 +10,7 @@ builder.Services.AddScoped<KitchenCostCalculator>();
 builder.Services.AddScoped<LivingRoomCostCalculator>();
 builder.Services.AddScoped<BedroomCostCalculator>();
 builder.Services.AddScoped<EssentialsCostCalculator>();
-builder.Services.AddScoped<EssentialsCostCalculator>();
+builder.Services.AddScoped<DecoratingCostCalculator>();
 builder.Services.AddScoped<MovingCostAggregator>();
 builder.Services.AddOpenApi();     
 
