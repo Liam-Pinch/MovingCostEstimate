@@ -8,7 +8,9 @@ namespace MovingCostEstimate.models.MovingCosts
         public decimal FlooringCost { get; set; }
         public bool Underlay { get; set; }
         public decimal UnderlayCost { get; set; }
-        public decimal PaintOrPaper { get; set; }
+        public decimal PaintCost { get; set; }
+        public int PaintCoverage { get; set; }
+        public int NumberOfCoats { get; set; }
         public decimal Sofa { get; set; }
         public decimal Tv { get; set; }
         public decimal TvStand { get; set; }

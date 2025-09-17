@@ -50,7 +50,7 @@ namespace MovingCostEstimate.Controllers
         public ActionResult<decimal> CalculateDecorating([FromBody] MovingCostDecorating decorating) => Ok(_decoratingCalculator.CalculateDecorating(decorating));
         [HttpPost("total")]
         public ActionResult<MovingCostResponse> CalculateTotal([FromBody] MovingCostRequest request) => Ok(_movingCostAggregator.TotalCost(request.Van, request.Kitchen,
-        request.LivingRoom, request.Bedroom, request.Essentials, request.Decorating));
+        request.LivingRoom, request.Bedroom, request.Essentials, request.Decorating, request.Bathroom));
     }    
         
 }

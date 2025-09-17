@@ -12,6 +12,7 @@ builder.Services.AddScoped<BedroomCostCalculator>();
 builder.Services.AddScoped<EssentialsCostCalculator>();
 builder.Services.AddScoped<DecoratingCostCalculator>();
 builder.Services.AddScoped<MovingCostAggregator>();
+builder.Services.AddScoped<BathroomCostCalculator>();
 builder.Services.AddOpenApi();     
 
 var app = builder.Build();
