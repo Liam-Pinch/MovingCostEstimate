@@ -6,9 +6,14 @@ namespace MovingCostEstimate.Services.MovingCosts
     {
         public decimal CalculateKitchen(MovingCostKitchen Kitchen)
         {
-            return Kitchen.Cooker + Kitchen.Dishwasher + Kitchen.Freezer + Kitchen.Fridge +
-            Kitchen.Kettle + Kitchen.Microwave + Kitchen.Toaster + Kitchen.TumbleDryer + Kitchen.WashingMachine;
 
+            decimal paintCost = CostCalculatorUtilityFunctions.CalculatePaintCosts(Kitchen.LengthOfRoom, Kitchen.HeightOfRoom, Kitchen.WidthOfRoom,
+            Kitchen.PaintCoverage, Kitchen.PaintCost, Kitchen.NumberOfCoats);
+
+            decimal CostOfFloor = FlooringCostCalculatorUtility.CalculateFlooringCost(Kitchen.LengthOfRoom, Kitchen.WidthOfRoom, Kitchen.FlooringCost, Kitchen.Underlay, Kitchen.UnderlayCost);
+
+            return paintCost + CostOfFloor + Kitchen.Cooker + Kitchen.Dishwasher + Kitchen.Freezer + Kitchen.Fridge +
+            Kitchen.Kettle + Kitchen.Microwave + Kitchen.Toaster + Kitchen.TumbleDryer + Kitchen.WashingMachine;
             
         }
     }

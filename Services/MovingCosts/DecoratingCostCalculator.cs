@@ -6,8 +6,8 @@ namespace MovingCostEstimate.Services.MovingCosts
     {
             public decimal CalculateDecorating(MovingCostDecorating Decorating)
         {
-            return Decorating.BoxesAndEquiptment + Decorating.Curtains + Decorating.FlooringAndEquipment +
-            Decorating.LightFittings + Decorating.PaintAndEquipment + Decorating.WallpaperingAndEquipment;
+            return Decorating.BoxesAndEquiptment + Decorating.FlooringEquipment +
+            Decorating.LightFittings + Decorating.PaintEquipment + Decorating.WallpaperingEquipment;
 
             
         }

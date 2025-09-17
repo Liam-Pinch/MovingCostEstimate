@@ -8,6 +8,7 @@ namespace MovingCostEstimate.models.MovingCosts
         public decimal LivingroomTotal { get; set; }
         public decimal DecoratingTotal { get; set; }
         public decimal EssentialsTotal { get; set; }
+        public decimal BathroomTotal { get; set; }
         public decimal TotalCost { get; set; }
     }
 }
