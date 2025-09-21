@@ -22,5 +22,9 @@ namespace MovingCostEstimate.models.MovingCosts
         public decimal Toaster { get; set; }
         public decimal Dishes { get; set; }
         public decimal Cutlery { get; set; }
+        public decimal Knives { get; set; }
+        public decimal Utensils { get; set; }
+        public decimal Tupperware { get; set; }
+        public decimal MixingBowl { get; set; }
     }
 }
